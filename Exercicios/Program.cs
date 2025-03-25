@@ -16,12 +16,12 @@ Console.WriteLine(Saudacao("Carlos"));
 
 int Somar(int n1, int n2)
 {
-    return n1 + n2;
+    int resultado = n1 + n2;
+
+    return resultado;
 }
 
-int resultado = Somar(5, 3);
-
-Console.WriteLine(resultado);
+Console.WriteLine(Somar(5, 3));
 
 //Crie uma função chamada MostrarMensagem que exibe uma mensagem fixa no console.
 
@@ -36,28 +36,31 @@ MostrarMensagem();
 
 double CalcularMedia(double n1, double n2, double n3)
 {
-    return (n1 + n2 + n3) / 3;
+    double media = (n1 + n2 + n3) / 3;
+    return media;
 }
 
-double media = CalcularMedia(7.5, 8.0, 6.5);
-Console.WriteLine("Média: " + media);
+
+Console.WriteLine(CalcularMedia(7.5, 8.0, 6.5));
 
 //Crie uma função chamada EhPar que recebe um número inteiro e retorna true se ele for par e false se for ímpar.
 
 bool EhPar(int n1)
 {
+    bool resultado1;
     if (n1 % 2 == 0)
     {
-        return true;
+        resultado1 = true;
+        return resultado1;
     }
     else 
     {
-        return false;
+        resultado1 = false;
+        return resultado1;
     }
 }
 
-bool resultado1 = EhPar(9);
-Console.WriteLine(resultado1);
+Console.WriteLine(EhPar(9));
 
 //Crie uma função chamada CelsiusParaFahrenheit que recebe uma temperatura em graus Celsius e retorna o equivalente em Fahrenheit.
 
